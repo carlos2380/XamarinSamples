@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cities.Views.CityView">
+  <Grid>
+
+    <Grid.ColumnDefinitions>
+      <!-- Aquí se definen las columnas -->
+
+      <ColumnDefinition Width="Auto" />
+      <!--1ª Columna-->
+
+    </Grid.ColumnDefinitions>
+
+    <Grid.RowDefinitions>
+      <!-- Aquí se definen las filas -->
+
+      <RowDefinition Height="Auto" />
+      <!--1ª Fila-->
+
+      <RowDefinition Height="Auto" />
+      <!--2ª Fila-->
+
+      <RowDefinition Height="Auto" />
+      <!--3ª Fila-->
+
+    </Grid.RowDefinitions>
+
+    <!--Posicionamos los controles dentro de las celdas del GridLayout-->
+
+    <!--1ª Fila-->
+
+    <Label
+
+      Grid.Column="0"
+
+      Grid.Row="0"
+
+      Text="{Binding Nombre}"/>
+
+    <!--2ª Fila-->
+
+    <Image
+
+   Grid.Column="0"
+
+   Grid.Row="1"
+
+   Source="{Binding Imagen}"/>
+
+    <!--3ª Fila-->
+
+    <Label
+
+  Grid.Column="0"
+
+  Grid.Row="2"
+
+  Text="{Binding Descripcion}"/>
+
+  </Grid>
+</ContentPage>
